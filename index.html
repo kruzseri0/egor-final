@@ -1,0 +1,142 @@
+<head>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>SunnyLand</h1>
+    <nav class="menu">
+      <a href="#park">О парке</a>
+      <a href="#attractions">Аттракционы</a>
+      <a href="#schedule">Расписание</a>
+      <a href="#tickets">Билеты</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+  <main>
+   <section class="park">
+     <img src="assets/photo213.jpg">
+     <div>
+     <h2>О парке </h2>
+     <p>SunnyLand — это яркий парк отдыха, где каждый день превращается в маленькое приключение. Здесь можно гулять по живописным аллеям, отдыхать всей семьёй, пробовать необычные развлечения и наслаждаться атмосферой настоящего праздника. Парк создан для гостей любого возраста — от самых маленьких посетителей до взрослых, которые хотят ненадолго вернуться в детство.</p>
+     </div>
+    </section>
+    <section class="attractions">
+      <div>
+      <h2>Атракционы и зоны отдыха</h2>
+      <p>В SunnyLand предусмотрено множество мест для спокойного и комфортного отдыха:
+Солнечная аллея — уютная прогулочная зона с цветами, фонтанами и тенистыми скамейками.
+Семейная поляна — просторное место для пикников, игр и отдыха на свежем воздухе.
+Зелёный сад — тихий уголок с декоративными растениями, небольшими прудами и уютными беседками.
+Детский городок — безопасная игровая площадка для самых маленьких гостей.
+Фуд-зона SunnyFood — кафе и киоски с мороженым, напитками, сладостями и разнообразными блюдами.
+      
+      Аттракционы В парке каждый найдёт развлечение по душе:
+
+«Солнечное колесо» — большое колесо обозрения</p>
+        </div>
+    <section class="schedule">
+      <div>
+       <h2>График работы парка</h2> 
+        <table>
+          <tr> 
+            <th>День недели</th> 
+            <th>Время работы</th> 
+          </tr>
+          <tr> <td>Понедельник</td> 
+            <td>11:00–20:00</td>
+          </tr> 
+          <tr> 
+            <td>Вторник</td>
+            <td>11:00–20:00</td> 
+          </tr>
+          <tr>
+            <td>Среда</td>
+            <td>11:00–20:00</td>
+          </tr>
+          <tr>
+            <td>Четверг</td>
+            <td>11:00–20:00</td>
+          </tr>
+          <tr>
+            <td>Пятница</td> 
+            <td>11:00–22:00</td>
+          </tr> <tr> 
+          <td>Суббота</td> 
+          <td>10:00–23:00</td> 
+          </tr> 
+          <tr> 
+            <td>Воскресенье</td>
+            <td>10:00–23:00</td> 
+          </tr>
+        </table>
+        </div>
+    </section>
+    </section>
+    <section class="tickets"> 
+      <form action="#" method="post"> 
+        <h1>Заказ билетов</h1>
+        <div class="form-group">
+          <label for="name">Ваше имя и фамилия:</label> 
+          <input type="text" id="name" name="name" placeholder="Например: Иван Иванов" required> 
+        </div>  <div class="form-group">
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" placeholder="example@mail.ru" required> 
+        </div> 
+        <div class="form-group"> 
+          <label for="ticket-type">Тип билета:</label>
+          <select id="ticket-type" name="ticket-type" required>
+            <option value="" disabled selected>Выберите тип билета</option> 
+            <option value="adult">Взрослый (1200 руб.)</option>
+            <option value="child">Детский (800 руб.)</option>
+            <option value="family">Семейный (3500 руб.)</option> 
+          </select> 
+        </div> 
+        <div class="form-group"> 
+          <label for="quantity">Количество:</label> 
+          <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required> 
+        </div> 
+        <div class="form-group">
+          <label for="date">Дата посещения:</label> 
+          <input type="date" id="date" name="date" required>
+        </div>  
+        <button type="submit" class="btn-order">Оформить заказ</button>
+        <p class="message"></p>
+      </form>  
+    </section>
+    <div class="total-info"> После оплаты билет придет на указанную вами почту. </div> 
+    <section class="contacts">
+      
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand"> 
+        <h3>SunnyLand</h3>
+        <p>Самый яркий парк развлечений, где каждый день — это маленькое приключение для всей семьи.</p> 
+      </div> 
+      <div class="footer-contacts">
+        <h4>Контакты</h4>
+        <div class="contact-item"> 
+          <span>📍</span>
+          <span>г. Москва, ул. Солнечная, д. 1</span>
+        </div>
+        <div class="contact-item">
+          <span>📞</span> 
+          <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+        </div> 
+        <div class="contact-item">
+          <span>✉️</span> 
+          <a href="mailto:info@sunnyland.ru">info@sunnyland.ru</a>
+        </div> 
+        <div class="contact-item">
+          <span>🕐</span> 
+          <span>Ежедневно: 10:00 – 22:00</span> 
+        </div>
+      </div>
+    </div> 
+    <div class="footer-bottom">
+      <p>&copy; 2026 SunnyLand. Все права защищены.</p>
+    </div>
+  </footer>
+  </body>
